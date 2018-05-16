@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<button id="tombol1">Tombol 1</button> <p class="note">Halo Dunia!</p>
+<script>
+   $(document).ready(function(){
+        $('#tombol1').hover(function(){ 
+            $('.note').toggle();
+            // activate the function when
+            // hovering your pointer mouse inside the button
+            });
+        });
+</script>
+</body>
+</html>

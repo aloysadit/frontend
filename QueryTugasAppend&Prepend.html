@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <p/><input type="text" class="input1">
+        <button id="add"> Tambah </button>
+
+        <ol>
+            <h3 id="jwb">
+                    
+            </h3>
+        </ol>
+        
+
+<script>
+    $("#add").click(function(){
+        var x2 = $('.input1').val();
+        var buttonDelete = '<button class="delete">x</button>';
+        console.log(x2);
+        $('#jwb').append ('<li>' + x2 + buttonDelete + '</li>');
+        
+        $("#buttonDelete").click(function(){
+            $(this).remove();
+        })
+        // "append" menggantikan "html" karena untuk bikin list
+        // tombol close belum berfungsi
+        
+    // $("#hapus").click(function(){
+    //     $('#jwb').remove();
+            
+    
+    })
+   
+</script>
+
+    
+    
+</body>
+</html>

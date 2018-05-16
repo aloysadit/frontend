@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <form id="kalkulator">
+        <p><input type="number" id="angka1">Masukkan Angka 1</p>
+        <p><input type="number" id="angka2">Masukkan Angka 2</p>
+
+        <p><select id="operasi">
+            <option value="tambah"> + </option>
+            <option value="kurang"> - </option> 
+            <option value="bagi"> / </option> 
+            <option value="kali"> x </option> 
+        </select>
+
+        <p><input type="submit">
+          
+        
+    </form>
+
+<h3 id="jawaban"></h3>
+
+<script>
+        $('#kalkulator').submit(function(x){
+        x.preventDefault();
+        // function X, PERTAMA, untuk Prevent Default
+        
+        var angka1 = parseInt($('input#angka1').val()); 
+        var angka2 = parseInt($('input#angka2').val()); 
+        var operasi = $('select#operasi').val(); 
+        
+        
+        // function X, KEDUA untuk menjalankan IF
+            if (operasi==="tambah"){
+                z=angka1+angka2;
+
+                $('input#angka1').val(''); $('input#angka2').val('');
+                // ini untuk mengembalikan Form menjadi kosong lagi, blank kalkulator input
+                
+                console.log(angka1, operasi, angka2, '=', z);
+                // ini untuk tes memunculkan di Console-Log
+
+                $('#jawaban').html(z);
+                // gunakan " === " supaya bisa jalan
+            }
+            else if(operasi==="kurang"){
+                z=angka1-angka2;
+
+                 $('input#angka1').val(''); $('input#angka2').val('');
+                // ini untuk mengembalikan Form menjadi kosong lagi, blank kalkulator input
+                
+                console.log(angka1, operasi, angka2, '=', z);
+                // ini untuk tes memunculkan di Console-Log
+
+                $('#jawaban').html(z);
+                // gunakan " === " supaya bisa jalan
+        
+            }
+            else if(operasi==="bagi"){
+                z=angka1/angka2;
+                $('input#angka1').val(''); $('input#angka2').val('');
+                // ini untuk mengembalikan Form menjadi kosong lagi, blank kalkulator input
+                
+                console.log(angka1, operasi, angka2, '=', z);
+                // ini untuk tes memunculkan di Console-Log
+
+                $('#jawaban').html(z);
+                // gunakan " === " supaya bisa jalan
+            }
+            else {
+                z=angka1*angka2;
+                $('input#angka1').val(''); $('input#angka2').val('');
+                // ini untuk mengembalikan Form menjadi kosong lagi, blank kalkulator input
+                
+                console.log(angka1, operasi, angka2, '=', z);
+                // ini untuk tes memunculkan di Console-Log
+
+                $('#jawaban').html(z);
+                // gunakan " === " supaya bisa jalan
+            }  
+       
+    });
+            
+
+
+</script>
+
+       
+
+</body>
+</html>

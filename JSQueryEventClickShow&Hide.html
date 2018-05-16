@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <button id="tombol1">tombol 1</button>
+    <button id="tombol2">tombol 2</button>
+    <p class="note"> Halo Dunia </p>
+
+<script>
+    $(document).ready(function(){
+        $('#tombol1').click(function(){
+            $('.note').hide();
+        })
+        
+        $('#tombol2').on('click', function(){
+            $('.note').show();
+        })
+        
+    })
+    
+</script>
+    
+</body>
+</html>

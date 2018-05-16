@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+body {
+    padding: 10px; color:black; 
+    /* for Body's Properties */
+}
+.out {
+    background-color:whitesmoke; padding:20px;
+    position: fixed; top: 10%;left:20%;right:0%;bottom:10%;
+    /* for Right Bar's properties. 
+    TOP, RIGHT, BOTTOM = 0% means Full View, no space
+    LEFT = 20% because the .in Class/Left Bar take 80% of full view (look under) */
+}
+.in {
+    background-color:lightgray; padding:20px;
+    position:fixed; right:80%; top:10%; bottom:10%; left:0;
+    /* for Left Bar's Properties 
+    .in Class / Left Bar take 80% of full view (right:80%) */
+   
+}
+
+.header {
+    background-color:rgb(73, 151, 240); padding:20px;
+    position:fixed; right:0%; top:0%; bottom:90%; left:0%;
+   
+}
+
+.footer {
+    background-color:rgb(86, 225, 250); padding:20px;
+    position:fixed; right:0%; top:90%; bottom:0%; left:0%;
+    
+   
+}
+</style></head>
+
+
+<body>
+    <div class="out"> 
+        <h1> Sidebar Navigation Layout</h1>
+        <br/> <br/> </br>
+        <h3>First Paragraph</h3>
+        <br/>
+        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Eveniet ea distinctio atque sapiente officia, ex molestias est 
+            voluptate porro beatae omnis perspiciatis adipisci sunt, 
+            provident eligendi earum assumenda rerum! Fugiat!</h5>
+        <br/> <br/>
+        <h3>Second Paragraph</h3>
+        <br/>
+        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Eveniet ea distinctio atque sapiente officia, ex molestias est 
+            voluptate porro beatae omnis perspiciatis adipisci sunt, 
+            provident eligendi earum assumenda rerum! Fugiat!</h5>
+        <br/> <br/>
+      
+                <div class="in">
+                    <!-- Class "in" is inside of Class "out" in this coding, 
+                        but in the Layout, it is located in front of the Class "out" 
+                        AND because of the "fixed position", 
+                        no matter what happen on the size & position of the Class "out",
+                        Class "in" will stay the same. -->
+                    <center>
+                    <br/><br/>LOGO
+                    <br/><br/><br/> Link#1 
+                    <br/><br/><br/> Link#2 
+                    <br/><br/><br/> Link#3
+                    </center>
+                        
+                        <div class="header">
+                                This part is for Header
+
+                            <div class="footer">
+                                    This part is for Footer
+
+                            </div>
+
+                        </div>
+
+                </div>
+    </div>
+</body>
+</html>

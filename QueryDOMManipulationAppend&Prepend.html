@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <p class="para1">Ini Paragraf 1</p>
+    <p class="para2">Ini Paragraf 2</p>
+
+    <ul>
+        <li>Ini list 1</li>
+        <li>Ini list 2</li>
+        <li>Ini list 3</li>
+    </ul>
+
+    <script>
+        $(document).ready(function(){
+            $('.para1').appendTo('.para2');
+            $('.para1').prependTo('.para2');
+            $('ul').append('<li>Ini append list</li>');
+            // ini akan ditambahkan pada list terakhir
+            $('ul').prepend('<li>Ini prepend list</li>');
+            // ini akan ditambahkan pada list pertama
+            $('ul').before('<h4>Berikut adalah list:</h4>'); 
+            // ini sebelum <ul>
+            $('ul').after('<h4>Demikianlah list.</h4>');
+            // ini after <ul>
+
+            $('ul').empty();
+            $('ul').detach();
+            //empty dan detach buat ngosongin;
+        })
+    </script>
+    
+</body>
+</html>

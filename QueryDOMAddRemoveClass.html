@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+<style>
+    .myClass {
+        color:yellow;
+        background:blue;
+        /* ini Class yang akan di add dan remove*/
+    }
+
+</style>
+</head>
+
+<body>
+    <div id="container">
+        <button id="btn1">Tombol</button>
+        <p class="para1">ini paragraf 1</p>
+        <p class="para2">ini paragraf 2</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('p.para1').css({color:'red', background:'yellow'});
+            $('p.para2').addClass ('myClass');
+            $('p.para2').removeClass('myClass');
+        })
+    </script>
+    
+</body>
+</html>

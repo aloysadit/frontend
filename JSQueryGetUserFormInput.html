@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <form id="formulir">
+        <p><input type="text" id="nama"> 
+        <p><input type="number" id="usia"> 
+
+        <p><select id="sex">
+            <option value="pria">Laki-laki</option>
+            <option value="wanita">Perempuan</option> 
+        </select>
+
+        <p><input type="submit">
+    </form>
+<script> $('#formulir').submit(function(x){
+        x.preventDefault();
+        var nama = $('input#nama').val(); 
+        var usia = $('input#usia').val(); 
+        var sex = $('select#sex').val(); 
+        console.log(nama+usia+sex);
+    });
+</script>
+</body>
+</html>

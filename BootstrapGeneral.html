@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="jquery-3.3.1.min.js"> </script>     -->
+
+<link rel="stylesheet" type="text/css"
+href="bootstrap-3.3.7-dist/css/bootstrap.min.css"> 
+<script type="text/javascript"
+src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+
+<style>
+    /* style untuk container */
+    /* .container{ background: yellow; height: 100px;}   
+    .container-fluid{
+        background: red;
+        height: 100px; } */
+    /* end of stle */
+
+    /* style untuk ROW and Columns */
+    .gaya {
+        text-align: center;
+        background:lightblue;
+        padding:20px;
+    }
+    .gaya:nth-last-child(odd){
+        background:grey;
+    }
+
+    .container-fluid{
+        height:200px
+    }
+    /* end of style*/
+    
+</style>
+
+
+</head>
+
+<body>
+    <!-- mulai first Bootstrap -->
+    <button class="btn btn-success">Klik Ini
+    </button>
+    <!-- akhir first Bootstrap -->
+
+    <!-- mulai Container -->
+    <div class="container">ini fixed</div>
+    <div class="container-fluid">Ini fluid</div>
+    <!-- akhir Container -->
+
+    <!-- mulai Row & Columns -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 gaya">Andi</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 gaya">Budi</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 gaya">Caca</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 gaya">Deni</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 gaya">Euis</div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2 gaya">Fafa</div>
+        </div>
+    </div>
+    <!-- akhir Row & Columns -->
+    <!-- xs=phone, sm=tablet, md=desktop, lg=desktop(larger) -->
+
+    <!-- mulai OFFSET COLUMNS -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-8 gaya">Andi</div>
+            <div class="col-xs-offset-2 col-xs-8 gaya">Budi</div>
+            <div class="col-xs-offset-2 col-xs-8 gaya">Caca</div>
+            <div class="col-xs-offset-2 col-xs-8 gaya">Deni</div>
+            <div class="col-xs-offset-2 col-xs-8 gaya">Euis</div>
+            <div class="col-xs-offset-2 col-xs-8 gaya">Fafa</div>
+        </div>
+    </div>
+    <!-- akhir OFFSET COLUMNS, hasilnya bener nggak?-->
+
+    <!-- Push, Columns, Pull -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8 col-xs-push-4 gaya"> Andi </div>
+            <div class="col-xs-4 col-xs-pull-8 gaya"> Budi </div>
+        </div>
+    </div>
+    <!-- end of code -->
+
+    
+
+</body>
+</html>

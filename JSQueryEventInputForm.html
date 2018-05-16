@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <input type="text">
+<script>
+    $(document).ready(function(){
+        $('input').focus(function(){
+            $(this).css('background','pink');
+        })
+        $('input').blur (function(){
+            $(this).css('background','yellow');
+        })
+        // The blur event occurs when an element loses focus.
+        // The blur() method triggers the blur event, 
+        // or attaches a function to run when a blur event occurs.
+        // Tip: This method is often used together with the focus() method.
+    })
+
+</script>
+
+    
+</body>
+</html>

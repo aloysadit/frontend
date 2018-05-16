@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <button id="tombol1">tombol 1</button>
+    <p class="note">Halo Dunia!</p>
+
+<script>
+    $(document).ready(function(){
+        $('#tombol1').click(function(){
+            $('.note').toggle(1000, function (){
+                alert ('Tombol ditekan!');
+            });
+            // Adding Delay Time in Toggle
+        })
+    })
+    
+</script>
+    
+</body>
+</html>

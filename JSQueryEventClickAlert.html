@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <button id="tombol1">tombol 1</button>
+    <button id="tombol2">tombol 2</button>
+
+<script>
+    $(document).ready(function(){
+        $('#tombol1').click(function(){
+            alert('Tombol 1 ditekan!');
+        })
+        // Cara Penulisan Pertama
+        $('#tombol2').on('click', function(){
+            alert('Tombol 2 ditekan!');
+        })
+        // cara penulisan Kedua
+    })
+    
+</script>
+    
+</body>
+</html>

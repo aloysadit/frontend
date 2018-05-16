@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <input type="text">
+
+<script>
+    $(document).ready(function(){
+        $('input').keyup(function(x){
+            var code = x.which;
+            console.log (code);
+        })
+    })
+</script>
+</body>
+</html>

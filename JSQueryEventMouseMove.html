@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+        <button id="tombol1">Tombol 1</button> 
+        <p class="note">Halo Dunia!</p>
+
+<script> $(document).ready(function(){
+        $('#tombol1').on('mousemove', function(){ 
+            $('.note').toggle();
+            // mouse pointer needs to always move inside the button
+            // to trigger the Toggle effect, not just hovering.
+            });
+        }); 
+</script> 
+</body>
+</html>

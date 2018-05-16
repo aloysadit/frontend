@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <input type="text" id="newItem">
+
+    <ol> </ol>
+
+<script>
+    $(document).ready(function(){
+        $('#newItem').keyup (function(x){
+            var code = x.which;
+            if (code==13){
+                // kalau pencet keycode = 13 / ENTER, maka diproses
+                x.preventDefault ();
+                // prevent Default sebenarnya gak perlu di sini
+                $('ol').append ('<li>'+x.target.value+'</li>');
+            }
+        })
+    })
+</script>
+    
+</body>
+</html>

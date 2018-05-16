@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <select id="pemainBola" multiple size="10">
+        <option value="Bambang">Bambang</option>
+        <option value="andi">Andi</option>
+        <option value-"Joko">Joko</option>
+        <option value-"Supono">Supono</option>
+        <option value="Hadikusuma">Hadikusuma</option>
+    </select>
+
+    <button class="pindahKanan">PINDAH KANAN</button>  
+    <button class="pindahKiri">PINDAH KIRI</button>  
+
+    <select id="pemainBola2" multiple size="10">
+            <option value="Bambang">Bambang</option>
+            <option value="andi">Andi</option>
+            <option value-"Joko">Joko</option>
+            <option value-"Supono">Supono</option>
+            <option value="Hadikusuma">Hadikusuma</option>
+    </select>
+   
+  
+
+ <script>
+var x='';
+    $(document).ready(function(){
+        $('select#pemainBola').change(function(pilih){
+            x=(pilih.target.value);
+            alert(x);
+            // ambil Value masukkan ke Var X
+        })
+    })
+
+    $('.pindahKanan').click(function(){
+        alert (x);
+        $('#pemainBola2').append('<option value="'+x+'">'+x+'</option>');
+
+    })
+ </script>
+
+</body>
+</html>

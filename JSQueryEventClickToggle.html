@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <button id="tombol1">tombol 1</button>
+    <p class="note">Halo Dunia!</p>
+
+<script>
+    $(document).ready(function(){
+        $('#tombol1').click(function(){
+            $('.note').toggle();
+            // This method checks the selected elements 
+            // for visibility. 
+            // show() is run if an element is hidden. 
+            // hide() is run if an element is visible 
+            // - This creates a toggle effect.
+        })
+    })
+    
+</script>
+    
+</body>
+</html>

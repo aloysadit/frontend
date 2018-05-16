@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <button id="tombol1">Tombol 1</button> 
+    <p class="note">Halo Dunia!</p>
+
+<script> 
+        $(document).ready(function(){
+            $('#tombol1').on('mousedown', function(){ 
+                $('.note').toggle();
+        });
+            $('#tombol1').on('mouseup', function(){ 
+                $('.note').toggle();
+        });
+        // you need to click & drag UP/Down the mouse pointer on the Button to activate the Toggle function
+    });
+</script>
+</body>
+</html>
